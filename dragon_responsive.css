@@ -1,0 +1,174 @@
+*{
+    overflow: auto;
+}
+body{
+    background-color: #8BA1BB;
+    font-family: Arial;
+    margin: 0;
+}
+div#contenue{
+    background-color: white;
+    margin: 60px auto 60px auto;
+    max-width: 700px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 50px 10px 50px;
+    overflow: visible;
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+p.description{
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: medium;
+}
+div.description{
+    text-align: center;
+}
+.fiche{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    overflow: visible;
+} p.fiche {
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    max-width: max-content;
+    display: inline-block;
+}
+div.separateur{
+    height: 1px;
+    background-color: black;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenueImg{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenueImg img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    max-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+.contenueImg table{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20%;
+    background-color: #6C829DC0;
+    color: white;
+    font-size: medium;
+    text-align: center ;
+}
+.contenueImg table th{
+    vertical-align: bottom;
+    padding-bottom: 3px;
+}
+.contenueImg table td{
+    vertical-align: top;
+    padding-bottom: 3px;
+}
+div.colonne{
+    width: 45%;
+    margin-top: 20px;
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829DC0;
+    padding-bottom: 10px;
+}
+div.colonne1 p{
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+
+}
+div.colonne1{
+    display: inline-block;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+div.colonne2{
+    float: right;
+}
+.colonne2 .numero{
+    background-color: #6C829DC0;
+    color: white;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.colonne2 .donnees{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.colonne2 tr{
+    margin: 0px;
+    height: 20px;
+    width: 200px;
+}
+.colonne2 td{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/*  Style pour pc */
+@media only screen and (max-width: 768px){
+    div#contenue{
+        margin: 40px 2px 40px 2px;
+        padding: 10px 5px 10px 5px;
+    }
+    div.colonne1{
+        margin-bottom: 20px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    div.colonne2{
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contenueImg{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .contenueImg table{
+        width: 100%;
+        height: 20%;
+    }
+    .contenueImg table th{
+        font-size: 14px;
+    }
+    .contenueImg table td{
+        font-size: 13px;  
+    }
+}
